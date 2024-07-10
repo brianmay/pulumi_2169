@@ -1,0 +1,7 @@
+name: simple
+runtime: go
+config:
+  aws:profile:
+    value: sfp
+  aws:region:
+    value: us-east-2

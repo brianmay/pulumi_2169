@@ -1,0 +1,11 @@
+default:
+  tags:
+    - cloudcell-aws
+
+include:
+  - template: Terraform.latest.gitlab-ci.yml
+
+variables:
+  TF_STATE_NAME: default
+  AWS_CONFIG_FILE: "$CI_PROJECT_DIR/aws_config"
+  TF_TOKEN_gitlab_ea_com: "${TF_VAR_gitlab_access_token}"
